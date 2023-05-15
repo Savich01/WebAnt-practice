@@ -1,0 +1,19 @@
+.header {
+  min-height: 100vh;
+  background: url('../img/header-bg.jpg') 0 0 no-repeat;
+  background-size: cover;
+  
+  &__logo{
+    font-size: 2.4rem;
+    line-height: 4.3rem;
+    font-weight: 900;
+    letter-spacing: .2rem;
+    color: #FCFCFC;
+  }
+  &__inner{
+    padding: 6.1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
