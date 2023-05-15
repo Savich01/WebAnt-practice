@@ -1,0 +1,30 @@
+// миксины:
+@import 'abstracts/mixins.scss';
+// Переменные:
+@import 'abstracts/variable.scss';
+
+
+
+// Анимация:
+@import 'base/animation.scss';
+// Базовая настройка сайта:
+@import 'base/base.scss';
+
+
+
+// Тепографика: Заголовки, text
+@import 'base/typography.scss';
+// Утилиты:
+@import 'base/utilities.scss';
+
+
+
+// Кнопка:
+@import 'components/button.scss';
+
+
+// Шапка:
+@import 'layout/header.scss';
+
+
+@import 'pages/home.scss';
