@@ -93,6 +93,7 @@
       padding: 2rem;
       margin-right: 3rem;
       cursor: pointer;
+      z-index: 2;
     }
     &::after {
       content: '';
