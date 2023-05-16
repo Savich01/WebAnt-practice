@@ -27,9 +27,9 @@
 }
 .contacts {
   font-weight: 800;
-  font-size: 14.4px;
-  line-height: 30px;
-  letter-spacing: 2px;
+  font-size: 1.44rem;
+  line-height: 3rem;
+  letter-spacing: .2rem;
   color: #FCFCFC;
   padding-left: 3.6rem;
   position: relative;
@@ -57,14 +57,14 @@
     font-weight: 800;
     font-size: 1.4rem;
     line-height: 3rem;
-    letter-spacing: 4px;
+    letter-spacing: .4rem;
     text-transform: uppercase;
     margin-bottom: 1.8rem;
   }
   &__title {
     font-weight: 900;
-    font-size: 99px;
-    line-height: 118px;
+    font-size: 9.9rem;
+    line-height: 11.8rem;
     margin-bottom: 7rem;
     span {
       color:#F61067;
@@ -72,8 +72,8 @@
   }
   &__subtitle {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 29px;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
     max-width: 65.5rem;
     padding-right: 5rem;
     position: relative;
@@ -109,9 +109,9 @@
   &__text2 {
     transform: rotate(90deg);
     font-weight: 800;
-    font-size: 12.6px;
-    line-height: 26px;
-    letter-spacing: 6px;
+    font-size: 1.26rem;
+    line-height: 2.6rem;
+    letter-spacing: .6rem;
     text-transform: uppercase;
     height: 26rem;
     position: relative;

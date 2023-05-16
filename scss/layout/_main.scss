@@ -1,0 +1,82 @@
+.main{
+  padding: 13rem;
+  background-color: #FCFCFC;
+}
+.Our-services {
+  &__row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 7.5rem;
+    grid-row-gap: 6.4rem;
+    margin-bottom: 10rem;
+  }
+  &__text{
+    font-weight: 800;
+    font-size: 1.26rem;
+    line-height: 2.6rem;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    color: #F61067;
+    margin-bottom: 1.8rem;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 4.5rem;
+    line-height: 6.7rem;
+    color: #30233D;
+    margin-bottom: 6rem;
+  }
+  &__colum{
+    display: flex;
+  }
+  &__cite{
+    font-family: 'Noticia Text', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 4rem;
+    padding: 9rem 30rem 9rem 9.8rem;
+    max-width: 121.3rem;
+    background: #5E239D;
+    align-items: center;
+    position: relative;
+    color: #FCFCFC;
+    &::after {
+      content: '';
+      background: url('../img/Photo.png') 0 0 no-repeat;
+      position: absolute;
+      width: 42rem;
+      height: 63rem;
+      top: -40%;
+      right: -13.5%;
+    }
+  }
+}
+.cite__text{
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  padding: 6rem 30rem 9rem 9.8rem;
+  span {
+    color: #F61067;
+    font-weight: 800;
+  }
+}
+.content {
+  max-width: 31.8rem;
+  &__img{
+    margin-bottom: 1.8rem;
+  }
+  &__title{
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #30233D;
+    margin-bottom: 0.9rem;
+  }
+  &__text{
+    font-weight: 400;
+    font-size: 1.62rem;
+    line-height: 2.6rem;
+    color: #776C82;
+  }
+}
