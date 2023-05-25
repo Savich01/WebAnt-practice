@@ -28,6 +28,9 @@
   &__colum {
     display: flex;
   }
+  &__box{
+    position: relative;
+  }
 
   &__cite {
     font-family: 'Noticia Text', serif;
@@ -39,18 +42,15 @@
     max-width: 121.3rem;
     background: #5E239D;
     align-items: center;
-    position: relative;
     color: #FCFCFC;
 
-    &::after {
-      content: '';
-      background: url('../img/Photo.png') 0 0 no-repeat;
-      position: absolute;
-      width: 42rem;
-      height: 63rem;
-      top: -40%;
-      right: -13.5%;
-    }
+  }
+  &__img{
+    position: absolute;
+    top: -10.5rem;
+    right: -5rem;
+    max-width: 100%;
+    display: block;
   }
 }
 
@@ -89,3 +89,118 @@
     color: #776C82;
   }
 }
+
+//-------------Adaptive----------------------------
+
+
+@media (max-width: 1133px) {
+  .Our-services {
+    &__img {
+      max-width: 35rem;
+      right: 0;
+      top: -1.2rem;
+    }
+  }
+}
+@media (max-width: 1121px) {
+  .Our-services{
+    &__img{
+      max-width: 35rem;
+      right: 0;
+      top: -1.2rem;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .Our-services {
+    &__img {
+      max-width: 35rem;
+      right: 0;
+      top: -5.2rem;
+    }
+  }
+}
+@media (max-width: 906px) {
+  .Our-services {
+    &__img {
+      max-width: 35rem;
+      right: 0;
+      top: -1.2rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .Our-services {
+    &__img {
+      max-width: 35rem;
+      right: 0;
+      top: -5.2rem;
+    }
+  }
+}
+@media (max-width: 726px) {
+  .Our-services {
+    &__img {
+      max-width: 35rem;
+      right: 0;
+      top: -1.2rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .Our-services {
+    &__img {
+      max-width: 35rem;
+      right: 0;
+      top: -5.2rem;
+    }
+  }
+}
+@media (max-width: 544px) {
+  .Our-services {
+    &__img {
+      max-width: 35rem;
+      right: 0;
+      top: -1.2rem;
+    }
+  }
+}
+@media (max-width: 434px) {
+  .Our-services {
+    &__img {
+      max-width: 35rem;
+      right: 0;
+      top: 2.8rem;
+    }
+  }
+}
+@media (max-width: 420px) {
+  .Our-services {
+      &__row{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 7.5rem;
+        grid-row-gap: 6.4rem;
+        margin-bottom: 10rem;
+        text-align: center;
+      }
+      &__text{
+        text-align: center;
+      }
+      &__title{
+        text-align: center;
+      }
+      &__img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &__cite{
+        padding: 9rem 9rem 9rem 9.8rem;
+      }
+    }
+    .cite__text{
+      padding: 2rem 23rem 15rem 22.8rem;
+      display: block;
+      text-align: center;
+    }
+  }

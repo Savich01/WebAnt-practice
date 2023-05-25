@@ -192,6 +192,9 @@
   .contacts{
     display: none;
   }
+  .header{
+    min-height: 50vh;
+  }
 }
 @media (max-width: 360px) {
   .We-grow {

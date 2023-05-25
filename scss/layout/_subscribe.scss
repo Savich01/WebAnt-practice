@@ -55,18 +55,48 @@
     text-transform: uppercase;
     color: #F61067;
     padding-right: 5rem;
-    position: relative;
     cursor: pointer;
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      background: url('../img/Arrowform.svg') 0 0 no-repeat;
-      width: 2.7rem;
-      height: 2.7rem;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 2rem;
+  &__button{
+    position: relative;
+  }
+
+  &__img{
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+  }
+}
+
+//----------Adaptive----------------------------
+
+@media (max-width: 768px){
+  .form{
+    &__img{
+      max-width: 3rem;
+    }
+  }
+}
+@media (max-width: 460px){
+  .form{
+    display: block;
+    &__text{
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid #30233D;
+      padding: 2rem 1rem;
+      box-shadow: 0rem .4rem .4rem rgba( 0, 0, 0, 0.3);
+      width: 45rem;
+    }
+    &__btn{
+      display: block;
+      width: 45rem;
+      padding: 2rem 1rem;
     }
   }
 }

@@ -8,17 +8,15 @@
   &__image {
     margin-bottom: 11.6rem;
     position: relative;
+  }
 
-    &::before {
-      content: '';
-      position: absolute;
-      background: url('../img/cov.png') 0 0 no-repeat;
-      width: 9.25rem;
-      height: 8rem;
-      bottom: -8%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
+  &__img2{
+    position: absolute;
+    bottom: -4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    display: block;
   }
 
   &__text {
@@ -153,6 +151,84 @@
 
     &:hover {
       background-color: #F61067;
+    }
+  }
+}
+
+
+
+
+@media (max-width: 1260px){
+  .profile{
+    &__ellipse1{
+      display: none;
+    }
+    &__ellipse2{
+      display: none;
+    }
+    &__ellipse3{
+      display: none;
+    }
+    &__ellipse4{
+      display: none;
+    }
+    &__ellipse5{
+      display: none;
+    }
+    &__ellipse6{
+      display: none;
+    }
+    &__ellipse7{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 992px){
+  .profile{
+    &__img{
+      max-width: 50%;
+    }
+    &__img2{
+      max-width: 12rem;
+    }
+  }
+}
+@media (max-width: 769px){
+  .profile{
+    &__imge{
+      &::before{
+        width: 14.25;
+        height: 13rem;
+      }
+    }
+    &__text{
+      margin-bottom: 20rem;
+    }
+  }
+}
+@media (max-width: 577px) {
+  .profile{
+    &__text{
+      max-width: none;
+      margin-bottom: 40rem;
+    }
+    &__btn{
+      padding: 4rem 4rem;
+      margin-top: 5rem;
+    }
+    &__btn_After{
+      transform: translateX(12rem);
+    }
+    &__btn_Before{
+      transform: translateX(-12rem);
+    }
+  }
+}
+@media (max-width: 460px) {
+  .profile{
+    &__img2{
+      max-width: 8rem;
     }
   }
 }
