@@ -16,5 +16,7 @@
   * [Cемантика ](https://www.youtube.com/watch?v=uDWWeqNrd1k)
   * [Адаптивная верстка](https://www.youtube.com/watch?v=sohdv21BVNI)
   * [БЭМ](https://www.youtube.com/watch?v=HihYQVuH64U)
+  * [Grid](https://www.youtube.com/watch?v=vExgsxs9r-M&t=390s)
+  * [flex-Box полный курс](https://www.youtube.com/watch?v=EO8hH_2OwCU&t=46s) 
 
 ***
