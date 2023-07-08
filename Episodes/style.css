@@ -63,6 +63,10 @@ body {
 :hover {
   color: #000;
 }
+
+.menu-list__link2{
+  color: #212121;
+}
 /* ---------------------- */
 
 .main{
