@@ -16,6 +16,23 @@
   <div class="wrapper">
     <div class="container _container">
       <header class="header">
+
+
+        <div class="burger-menu burger-menu__active">
+        
+          <a class="burger-menu__btn" href="#">
+            <span class="burger-menu__lines"></span>
+          </a>
+        
+          <nav class="burger-menu__nav">
+            <a class="burger-menu__link" href="#">Characters</a>
+            <a class="burger-menu__link" href="#">Locations</a>
+            <a class="burger-menu__link" href="#">Episodes</a>
+          </nav>
+        
+        </div>
+
+
         <div class="header-row">
           <a class="header-logo" href="#">
             <img class="header-logo__img" src="image/logo2.svg" alt="logo">
@@ -54,6 +71,50 @@
           </ul>
         </nav>
       </div>
+
+
+      <button id="open-modal-btn" class="component" href="#">ADVANCED FILTERS</button>
+      
+      <div id="my-modal" class="modal">
+        <div class="modal-box">
+          <button id="close-my-modal-btn" class="modal-close-btn">
+            <svg id="modal-box-arr" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                fill="black" fill-opacity="0.54" />
+            </svg>
+          </button>
+          <h2 class="modal-title">Filters</h2>
+          <div class="modal-box__item">Type
+            <svg id="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <g clip-path="url(#clip0_1621_401)">
+                <path d="M7.302 10L12.302 15L17.302 10H7.302Z" fill="black" fill-opacity="0.54" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1621_401">
+                  <rect width="24" height="24" fill="white" transform="translate(0.302002)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+          <div class="modal-box__item">Dimension
+            <svg id="arrow-svg" xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+              <g clip-path="url(#clip0_1621_401)">
+                <path d="M7.302 10L12.302 15L17.302 10H7.302Z" fill="black" fill-opacity="0.54" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1621_401">
+                  <rect width="24" height="24" fill="white" transform="translate(0.302002)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+      
+          <button class="bodal-box__btn">APPLY</button>
+      
+        </div>
+      </div>
+      
       <div class="card-box">
         <div class="card">
           <h1 class="card-title">Earth (C-137)</h1>
@@ -120,6 +181,7 @@
 
     </div>
   </main>
+  
   <footer class="footer">
     <div class="contaienr _container">
       <p class="footer-text">

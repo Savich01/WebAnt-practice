@@ -201,7 +201,7 @@ body{
 .modal-box{
   max-width: 30rem;
   height: 35rem;
-  background-color: #F2F9FE;
+  background-color: #fff;
   padding: 1.5rem 1.5rem .5rem 1.5rem;
   z-index: 1;
   transform: scale(0);
