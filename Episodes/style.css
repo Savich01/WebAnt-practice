@@ -296,7 +296,7 @@ body {
 }
 
 @media(max-width: 462px){
-  .menu-list {
+    .menu-list {
       display: none;
     }
   
