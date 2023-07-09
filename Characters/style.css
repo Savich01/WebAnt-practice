@@ -272,7 +272,9 @@ body{
 
 
 
-
+.serch-form{
+  overflow: hidden;
+}
 
 .serch-form__text{
   border: none;

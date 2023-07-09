@@ -305,7 +305,7 @@ body {
   }
 }
 @media(max-width: 362px){
-  .card:not(:nth-child(-n + 3)){
+  .card:not(:nth-child(-n + 2)){
     display: none;
   }
   .card{
