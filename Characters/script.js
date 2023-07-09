@@ -33,3 +33,18 @@ document.getElementById("close-my-modal-btn").addEventListener("click", function
   document.getElementById("my-modal").classList.remove ("open")
 })
 
+// ------------------------------------------------
+
+const btn = document.querySelector('.card-box__btn');
+const cards = document.querySelectorAll('.card');
+
+btn.addEventListener('click', function () {
+
+  for (let card of cards) {
+    card.style.display = "block";
+  }
+
+  btn.style.display = "none";
+
+});s
+
