@@ -143,6 +143,10 @@ body {
   margin-bottom: 6.1rem;
 }
 
+.card.hide {
+  display: none;
+}
+
 .serch-form {
   display: flex;
   border: 1px solid rgba(0, 0, 0, 0.38);

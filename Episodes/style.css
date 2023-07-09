@@ -223,6 +223,10 @@ body {
   background-color: #FAFAFA;
 }
 
+.card.hide {
+  display: none;
+}
+
 .card-title {
   font-size: 2rem;
   line-height: 3rem;
