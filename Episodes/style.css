@@ -27,7 +27,6 @@ body {
   margin: 0 auto;
 }
 
-
 .burger-menu__btn {
   position: absolute;
   top: .3rem;
@@ -55,30 +54,35 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.burger-menu__lines::after {
-  content: '';
-  top: .5rem;
-}
-
 .burger-menu__lines::before {
   content: '';
-  top: -.5rem;
+  top: -5px;
+
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: 5px;
+
 }
 
 .burger-menu__nav {
   display: none;
 }
 
-.burger-menu__active:active .burger-menu__lines {
+.burger-menu__btn.active .burger-menu__lines {
   background-color: transparent;
+  transition: all .1s;
 }
 
-.burger-menu__active:active .burger-menu__lines::before {
+.burger-menu__btn.active .burger-menu__lines::before {
   transform: rotate(45deg);
+  top: 0;
 }
 
-.burger-menu__active:active .burger-menu__lines::after {
+.burger-menu__btn.active .burger-menu__lines::after {
   transform: rotate(-45deg);
+  top: 0;
 }
 
 .header-row {
