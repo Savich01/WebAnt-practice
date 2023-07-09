@@ -15,7 +15,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
-
+.lock{
+  overflow: hidden;
+}
 /* ----------------------------------------- */
 .wrapper {
   box-shadow: -2px 0px 8px 2px rgba(0, 0, 0, 0.1);
@@ -25,6 +27,63 @@ body {
   max-width: 102rem;
   padding: 0rem 1.5rem;
   margin: 0 auto;
+}
+
+.logo{
+  max-width: 100%;
+}
+
+.burger-menu__btn {
+  position: absolute;
+  top: .3rem;
+  right: 1rem;
+  z-index: 30;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  display: none;
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  width: 1.8rem;
+  height: 0.2rem;
+  background-color: #0000008A;
+  transition: all .3s;
+}
+
+.burger-menu__lines {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: .5rem;
+}
+
+.burger-menu__lines::before {
+  content: '';
+  top: -.5rem;
+}
+
+.burger-menu__nav {
+  display: none;
+}
+
+.burger-menu__active:active .burger-menu__lines {
+  background-color: transparent;
+}
+
+.burger-menu__active:active .burger-menu__lines::before {
+  transform: rotate(45deg);
+}
+
+.burger-menu__active:active .burger-menu__lines::after {
+  transform: rotate(-45deg);
 }
 
 .header-row {
@@ -140,6 +199,7 @@ body {
 }
 
 .content-box__item-arrow{
+  cursor: pointer;
   position: relative;
 }
 .content-box__item-arrow::after{
@@ -167,4 +227,64 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #212121;
+}
+
+
+/* -------ADAPTIVE----------------- */
+
+
+@media(max-width: 462px){
+  .menu-list{
+    display: none;
+  }
+  .burger-menu__btn{
+    display: block;
+  }
+  .burger-menu__nav{
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 7rem;
+    transition: all .3s;
+    z-index: 1000;
+  }
+  .burger-menu__nav.active{
+    left: 0; 
+  }
+  .burger-menu__link{
+    font-family: 'Karla', sans-serif;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2.4rem;
+    padding-top: 4.8rem;
+    color: #000000;
+    display: flex;
+    align-items: center;
+  }
+  .btn{
+    margin-bottom: 1.7rem;
+  }
+  .logo{
+    max-width: 60%;
+  }
+  .title{
+    font-size: 3.8rem;
+    margin-bottom: 3.2rem;
+  }
+  .main-row{
+    display: block;
+  }
+  .content-box{
+    width: 100%;
+    margin-bottom: 5.2rem;
+  }
+  .content-box2{
+    width: 100%;
+    margin-bottom: 9.2rem;
+  }
 }

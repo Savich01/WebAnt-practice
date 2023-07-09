@@ -14,6 +14,9 @@ body{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
+.lock{
+  overflow: hidden;
+}
 
 /* ----------------------------------------- */
 .wrapper{
@@ -33,7 +36,6 @@ body{
   z-index: 30;
   width: 5rem;
   height: 5rem;
-  /* background-color: #2196F3; */
   border-radius: 50%;
   display: none;
 }
@@ -107,9 +109,9 @@ body{
   color: #000;
 }
 
-.menu-list__link1{
+/* .menu-list__link1{
   color: #212121;
-}
+} */
 
 /* --------------------------------- */
 
