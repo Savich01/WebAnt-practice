@@ -10,3 +10,18 @@ for (let elem of card) {
     window.location.href = 'http://127.0.0.1:5500/Characters-details/index.html';
   });
 }
+
+// ---------------------------------
+
+const menu = document.querySelector('.burger-menu__nav');
+const menuBtn = document.querySelector('.burger-menu__btn');
+
+const body = document.body;
+
+if (menu && menuBtn) {
+  menuBtn.addEventListener('click', function () {
+    menu.classList.toggle('active')
+    menuBtn.classList.toggle('active')
+    body.classList.toggle('lock')
+  });
+}
